@@ -26,3 +26,19 @@ console.log('distanza viaggio (km): ' + userKm);
 // 2 -
 const userAge = prompt('Quanti anni hai?', '17');
 console.log('Età utente: ' + userAge);
+
+// 3 -
+const finalPrice = userKm * 0.21;
+console.log('Prezzo per la distanza (€): ' + finalPrice);
+
+// 4 -
+if (userAge < 18) {
+    let discountMinor = finalPrice - (finalPrice * 0.20);
+    console.log('Prezzo scontato minorenni (€): ' + discountMinor);
+}
+
+if (userAge > 65) {
+    let discountOlder = finalPrice - (finalPrice * 0.40);
+    console.log('Prezzo scontato anziani (€): ' + discountOlder);
+}
+
