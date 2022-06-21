@@ -40,6 +40,15 @@ if (userAge <= 18) {
 } else {
     let result = document.getElementById('price');
     result.innerHTML = 'il prezzo del tuo biglietto è €: ' + `<strong> ${finalPrice} </strong>`;
+    if (userAge >= 65) {
+        let discountPlus = finalPrice - (finalPrice * 0.40);
+        console.log('Prezzo scontato (€): ' + discountPlus.toFixed(2));
+        let result = document.getElementById('price');
+        result.innerHTML = 'il prezzo del tuo biglietto scontato è €: ' + `<strong> ${discountPlus} </strong><br/> invece che €: <strong><del> ${finalPrice}</del></strong>`;
+    } else {
+        let result = document.getElementById('price');
+        result.innerHTML = 'il prezzo del tuo biglietto è €: ' + `<strong> ${finalPrice} </strong>`;
+    }
 }
 
 
