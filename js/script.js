@@ -18,5 +18,11 @@ va applicato uno sconto del 40% per gli over 65.
 6- Bonus
 */
 
-const userKm = prompt('Quanti chilometri vuoi percorrere?', '100')
-console.log('distanza viaggio (km): ' + userKm)
+
+// 1 -
+const userKm = prompt('Quanti chilometri vuoi percorrere?', '100');
+console.log('distanza viaggio (km): ' + userKm);
+
+// 2 -
+const userAge = prompt('Quanti anni hai?', '17');
+console.log('Età utente: ' + userAge);
